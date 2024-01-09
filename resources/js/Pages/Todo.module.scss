@@ -1,0 +1,11 @@
+.table{
+    width: 100vw;
+    height: auto;
+
+    > tbody {
+        > tr{
+            height: 2.5rem;
+            text-align: center;
+        }
+    }
+}

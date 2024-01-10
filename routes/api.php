@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/todo/{nome}', [TodoController::class, 'index'])->name('todo.index');
+Route::get('/todo/{nome}', [TodoController::class, 'index']);
+Route::get('/todo-detail/{id}', [TodoController::class, 'cursoDetalhes']);

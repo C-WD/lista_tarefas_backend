@@ -36,5 +36,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/todo', [TodoController::class, 'show'])->name('todo.show');
+Route::get('/todo', [TodoController::class, 'show']);
+Route::get('/todo-detail/{id}', [TodoController::class, 'cursoDetalhe']);
 require __DIR__ . '/auth.php';

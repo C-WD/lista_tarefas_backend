@@ -13,10 +13,12 @@ export default function Todo() {
                 .then(data => {
                     const elementos = [];
                     data.forEach((elemento, index) => {
+                        console.log(elemento['nome']);
                         elementos.push(
-                            <tr>
+                            <tr key={index}>
                                 <td>{index + 1}</td>
-                                <td>{elemento}</td>
+                                <td>{elemento['nome']}</td>
+                                <td><a href={`/todo-detail/${elemento['id']}`}>Salvar</a></td>
                             </tr>
                         )
                     });

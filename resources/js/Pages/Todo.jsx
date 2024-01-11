@@ -8,7 +8,14 @@ export default function Todo() {
 
     useEffect(() => {
         if (todo.nome !== undefined) {
-            fetch(`/api/todo/${todo.nome}`)
+            fetch(`/api/todo?nome=${todo.nome}`,
+                {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                    },
+                })
                 .then(response => response.json())
                 .then(data => {
                     const elementos = [];

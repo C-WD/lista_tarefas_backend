@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\CursosController;
-use App\Http\Controllers\Api\TodoController;
+use App\Http\Controllers\Api\CursosIntro;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,9 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::apiResource('/curso' , CursosController::class);
-// Route::post('/curso' , [CursosController::class, 'store']);
-// Route::get('/todo', [TodoController::class, 'index']);
-// Route::post('/todo', [TodoController::class, 'store']);
-
-// Route::get('/todo/{nome}', [TodoController::class, 'index']);
-// Route::get('/todo-detail/{id}', [TodoController::class, 'cursoDetalhes']);
+Route::apiResource('/intro', CursosIntro::class);

@@ -56,14 +56,14 @@ class CursosController extends Controller
             // ->get("https://www.udemy.com/api-2.0/courses/$codigo/public-curriculum-items/?fields[lecture]=@all,durationInSeconds")
             ->get("https://www.udemy.com/api-2.0/courses/$codigo?fields[course]=content_length_video,title")
             ->json();
-        Cursos::create([
+        $curso = Cursos::create([
             'nome' => $cursos['title'],
             'codigo' => $cursos['id'],
             'duracao' => $cursos['content_length_video'],
         ])->save();
         return response()->json([
             "message" => "Curso cadastrado com sucesso!",
-            'id' => $cursos['id'],
+            'id' => $curso['id'],
         ], 200);
     }
 

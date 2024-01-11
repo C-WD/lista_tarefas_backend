@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\Api\CursosController;
-use App\Http\Controllers\Api\CursosIntro;
+use App\Http\Controllers\Api\CursosIntroController;
+use App\Http\Controllers\Api\PlanoEstudosCursoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,4 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::apiResource('/curso' , CursosController::class);
-Route::apiResource('/intro', CursosIntro::class);
+Route::apiResource('/intro', CursosIntroController::class);
+Route::apiResource('/plano-estudos', PlanoEstudosCursoController::class);

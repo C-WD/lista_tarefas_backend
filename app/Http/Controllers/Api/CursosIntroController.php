@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\CursosIntro as ModelsCursosIntro;
 use Illuminate\Http\Request;
 
-class CursosIntro extends Controller
+class CursosIntroController extends Controller
 {
     /**
      * Display a listing of the resource.

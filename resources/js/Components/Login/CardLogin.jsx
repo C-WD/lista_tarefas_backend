@@ -20,7 +20,7 @@ export default function CardLogin() {
                 <label> Senha <input type="password" name='password' value={data.password} onChange={e => setData('password', e.target.value)} /></label>
                 <button>Entrar</button>
                 <div>
-                    <a href="/registro">Registre-se</a><a href="/">Esqueceu sua senha?</a>
+                    <a href="/registro">Registre-se</a><a href="/esqueceu-senha">Esqueceu sua senha?</a>
                 </div>
             </form>
         </div>

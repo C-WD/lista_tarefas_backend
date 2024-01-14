@@ -26,7 +26,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/login2', function () {return Inertia::render('Login');});
+Route::get('/teste', function () {return Inertia::render('EsqueceuSenha');});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

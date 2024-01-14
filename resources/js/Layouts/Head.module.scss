@@ -1,0 +1,40 @@
+@import '../Style/variaveis.scss';
+
+.head{
+
+    > div:first-child{
+        background-color: $cor-primaria;
+        width: 100vw;
+        height: 4.75rem;
+        justify-content: center;
+        display: flex;
+
+        > div{
+            display: flex;
+            width: 66vw;
+            justify-content: flex-start;
+            height: 100%;
+            align-items: center;
+
+            > a{
+                font-family: $inter;
+                color: white;
+                font-weight: 700;
+                padding: 1.5rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+    > div:nth-child(2){
+        width: 100vw;
+        height: .1875rem;
+        background-color: white;
+    }
+
+    > div:last-child{
+        background-color: $cor-primaria;
+        width: 100vw;
+        height: 2.25rem;
+    }
+}

@@ -2,7 +2,7 @@ import CardLogin from "@/Components/Login/CardLogin";
 import estilo from './Login.module.scss';
 import Layout from "@/Layouts/Layout";
 
-export default function Login2(){
+export default function Login(){
     return (
         <Layout>
             <div className={estilo.loginPage}>

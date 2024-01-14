@@ -2,8 +2,10 @@
 
 :root{
     --cor-primaria: #009879;
+    --cor-secundaria: #008CBA;
     --inter: 'Inter', sans-serif;
 }
 
 $cor-primaria: var(--cor-primaria);
+$cor-secundaria: var(--cor-secundaria);
 $inter: var(--inter);
